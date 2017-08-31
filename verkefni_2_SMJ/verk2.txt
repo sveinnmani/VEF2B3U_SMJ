@@ -1,0 +1,11 @@
+1. Hvað er ECMAScript?
+ECMAScript er skriftumál sem er aðallega notað í skriftum sem keyra á biðlara. JavaScript, JScript og ActionScript eru þekktustu útfærslur staðalsins.
+
+2. Hvað þýðir að JavaScript sé loosly typed tungumál?
+
+3. Er einhver munur á einföldum og tvöföldum gæsalöppum í JavaScript?
+Það er í raun og veru engin munur á tvöföldum og einföldum gæsalöppum í JavaScript.
+
+4. Hvað er null og undefined?
+
+5. Hver er munurinn á == og === í JavaScript?
