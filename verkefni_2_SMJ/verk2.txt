@@ -1,21 +1,36 @@
-1. Hvað er ECMAScript?
+1. 
 ECMAScript er skriftumál sem er aðallega notað í skriftum sem keyra á biðlara. JavaScript, JScript og ActionScript eru þekktustu útfærslur staðalsins.
 
 2. Hvað þýðir að JavaScript sé loosly typed tungumál?
 
-3. Er einhver munur á einföldum og tvöföldum gæsalöppum í JavaScript?
+3. 
 Það er í raun og veru engin munur á tvöföldum og einföldum gæsalöppum í JavaScript.
 
 4. Hvað er null og undefined?
 
 5. Hver er munurinn á == og === í JavaScript?
 
-6. Hver er munurinn á let og var? komdu með kóðadæmi sem sýnir muninn.
+6. 
+let breyta1 = 'numer eitt';
+var breyta2 = 'numer tvo';
 
-7. Skilgreindu fall á þrjá mismunandi vegu með kóðadæmi; function declarations, function
-expressions og arrow functions.
+console.log(breyta1);
+console.log(breyta2);
 
-8. Hvað gerir 'use strict'; í EcmaScript? (þarf að googla svar)
+7. 
+//function declarations
+function nyttFunc(a, b) {
+  return a + b;
+}
+//function expressions
+var x = function (a, b) {return a - b};
+var z = x(85, 53);
+//Út kemur = 32
+
+//function arrows
+(a, b, c) => { a*b+c }
+8. 
+"use strict"; skilgreinir að JavaScript kóði skuli vera keyrður í svokölluðu "strict mode"
 
 9. Hér er dæmi um “function declaration” og kall á fallið. Afhverju virkar eftirfarandi kóði í
 JavaScript, útskýrðu?
@@ -24,31 +39,23 @@ function x() {
   console.log('x');
 }
 
-10. Í hvaða röð er kóðinn keyrður í raun eftir að þýðandinn (e. interpreter) er búinn að fá hann til
-sín? Hvað birtir alert(), afhverju?
-function foo(){
+10. 
+Talan 8 er birt því það er það síðasta sem beðið er um að skila.
 
-  function bar() {
-    return 3;
-  }
-  return bar();
+11. 
+Talan er birt í console í inspect glugganum á vafranum.
 
-  function bar() {
-    return 8;
-  }
+12. 
+Þessi kóði birtir 'Hello World' í alert. Svigarnir eru sjálf-keyrandi function.
+
+13. 
+//Hér er ekki hægt að nota þessa breytu þar sem þetta er ekki inn í þessum function
+
+function nyrFunc() {
+  var breytaifunc = "breyta";
+  
+  //Hér er hægt að nota þessa breytu þar sem hún er inn í function.
 }
-alert(foo());
 
-11. Hvað gerist þegar ég gleymi að skilgreina breytu með var eða let? Útskýrðu hvað gerist
-age = '30';
-console.log(age); 
-Grunnatriði og Málskipan
-
-12. Útskýrðu hvað eftirfarandi kóði gerir, hvað gera svigarnir?
-(function() {
-  alert('Hello World');
-})();
-
-13. Útskýrðu variable scope.
-
-14. Hvað er call stack? 
+14. 
+Call stack er mechanism til að halda utan um hvar hann er staðsettur í kóðanum.
