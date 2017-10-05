@@ -1,0 +1,14 @@
+5.) Það er mun einfaldara og hraðar að nota DOM Manipulation en innerHTML. Dæmi:
+var i = 0; while (i < 200) {
+    div.innerHTML += '<li>My list item #' + i + '</li>';
+    i++; 
+}
+var i = 0; while (i < 200) {
+    var el = document.createElement('li');
+    el.innerText = 'This is my list item number ' + i;
+    div.appendChild(el);
+    i++; 
+}
+
+7.) Cross-site scripting eða XSS er gerð af varnarleysi tölvuöryggis sem er yfirleitt fundin í vefforritum. 
+XSS leyfir árásarmaður að setja inn skrifur á vefsíður sem aðrir notendur geta skoðað.  
