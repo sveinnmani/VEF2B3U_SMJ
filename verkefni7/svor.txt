@@ -1,4 +1,33 @@
 1.) Leiðirnar eru HTML event handler, DOM event handler og Event Listeners. Event listeners er besta leiðin því það er hægt að nota það oftar en einu sinni.
 //Sýnidæmi.
 
-2.)
+2.) 
+
+3.)
+
+
+4.) 
+"use strict";
+function checkUsername(a) {
+var target = e.target;
+}
+var el = document.getElementById('username');
+el.addEventlistener('blur', checkUsername, false);
+
+5.) 
+
+6a.)
+stopPropagation() er fall sem stöðvar að eventar safnist upp í parent elements.
+function nyttfall(event) {
+  mainDiv = document.getElementById("mainDiv");
+  mainDiv.innerHTML = "Halló heimur";
+  
+  event.stopPropagation();
+  alert("!!!");
+}
+
+6b.)
+preventDefault() hættir við event ef það er hægt að hætta við hann.sotp
+//Sýnidæmi
+document.getElementById("minSlod").addEventListener("click", function(event){
+event.preventDefault()});
