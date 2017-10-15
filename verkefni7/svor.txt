@@ -1,5 +1,9 @@
 1.) Leiðirnar eru HTML event handler, DOM event handler og Event Listeners. Event listeners er besta leiðin því það er hægt að nota það oftar en einu sinni.
 //Sýnidæmi.
+//HTML handler
+//DOM event handler
+//Event Listeners
+document.getElementById("question1").addEventListeners("click", BreytaLit, false);
 
 2.) 
 
