@@ -2,10 +2,18 @@
 //Sýnidæmi.
 //HTML handler
 //DOM event handler
+<div onclick="breytaText(this)">Breyta textanum</div>
+
+<script>
+function breytaText(id) {
+    id.innerHTML = "Breytur Texti";
+}
+</script>
 //Event Listeners
 document.getElementById("question1").addEventListeners("click", BreytaLit, false);
 
-2.) 
+2.)
+Callback er fall sem keyrir ekki þar til að ytra fallið hefur klárað sína keyrslu. Callback er fall sem er sett inn í annað fall sem breyta.
 
 3.)
 
