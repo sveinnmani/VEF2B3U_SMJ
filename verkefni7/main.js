@@ -1,4 +1,17 @@
 "use strict";
+
+function BreytaLit0()	{
+	document.getElementById("val0").style.color = "red";
+}
+function BreytaLit1()	{
+	document.getElementById("val1").style.color = "red";
+}
+function BreytaLit2()	{
+	document.getElementById("val2").style.color = "red";
+}
+function BreytaLit3()	{
+	document.getElementById("val3").style.color = "red";
+}
 function SynaSpurningu(spurning, htmltaggid)	{
 	var SaekjaSpurningu = window.document.getElementById(htmltaggid);
 	var Quiz = "<h3>" + spurning.Spurning + "</h3>";
@@ -7,7 +20,8 @@ function SynaSpurningu(spurning, htmltaggid)	{
 
 	for (var key in spurning.Valmoguleikar)
 	{
-		Quiz += "<div class='button'>" + spurning.Valmoguleikar[key] + "</div>";
+		//Quiz += "<div class='button' id=\"val" + key + "\">" + spurning.Valmoguleikar[key] + "</div>";
+		Quiz += "<div onclick='BreytaLit" + key + "()' class='button' id=\"val" + key + "\">" + spurning.Valmoguleikar[key] + "</div>";
 	}
 	
 
@@ -17,7 +31,7 @@ function SynaSpurningu(spurning, htmltaggid)	{
 }
 
 var spurning1 = {
-	Spurning: "Hmm?",
+	Spurning: "Hvaða stafur er fremmst í stafrófinu?",
 	Valmoguleikar: ["A", "B", "C", "D"],
 	Svar: 1
 };
@@ -47,14 +61,3 @@ var spurning6 = {
 	Svar: 0
 };
 SynaSpurningu(spurning1, "question1");
-SynaSpurningu(spurning2, "question2");
-SynaSpurningu(spurning3, "question3");
-SynaSpurningu(spurning4, "question4");
-SynaSpurningu(spurning5, "question5");
-SynaSpurningu(spurning6, "question6");
-
-//document.getElementById("question1").addEventListeners("click", BreytaLit, false);
-
-//HTML event handler
-//DOM event handler, síðasta sem maður gerir
-//Event Listeners
