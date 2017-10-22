@@ -71,3 +71,4 @@ Function.prototype.bind = function(breyta){
 };
 
 9.)
+Promise er object sem skilar completion eða failure með eftirfarandi gildi 
