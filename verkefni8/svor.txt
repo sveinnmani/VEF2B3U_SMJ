@@ -2,8 +2,8 @@
 For-loop er lykja sem hægt er að keyra oft. ForEach-loop tekur inn tvö parameter, ein breyta og eitt object. Síðan keyrir loopan fyrir hvern hlut sem er í objectinu. For-in loop keyrir í gegnum properties í object. For-of loop tekur breytu og fylki.
 
 2.)
-var	divs	=	document.getElementsByTagName('div');	
-for	(var	i	=	0,	div;	div	=	divs[i];	i++)	{		
+var divs = document.getElementsByTagName('div');	
+for(var i = 0, div; div = divs[i]; i++)	{		
   div.setAttribute("style", "border: solid 3px black; ")	
 }
 
