@@ -4,18 +4,43 @@ For-loop er lykja sem hægt er að keyra oft. ForEach-loop tekur inn tvö parame
 2.)
 var	divs	=	document.getElementsByTagName('div');	
 for	(var	i	=	0,	div;	div	=	divs[i];	i++)	{		
-/*	Process	div	in	some	way	*/	
+  div.setAttribute("style", "border: solid 3px black; ")	
 }
 
 3.)
 
 4.)
+var nyttmap = new Map();
+nyttmap.set(1, "fyrsta");
+nyttmap.set(2, "annað");
+nyttmap.set(3, "þriðja");
+
+nyttmap.forEach(x, key, mapObj){
+  document.write(x.toString());
+}
 
 5.)
 
 6.)
 
 7.)
+Arguments object er hægt að nota með falli ásamt færibreytum. Ekki þarf að fylla fallið af færibreytum.
+
+//Sýnidæmi
+"use strict"; //Þetta þarf að vera fyrir ofan svo kóðinn virkar
+function argumentsMargfalda(tala1, tala2, tala3)  {
+  arguments[1] = 1; //Hér er arguments 
+  if(arguments.length == 1)  {  //Ef arguments lengdin er 1
+    alert(tala1); //Kemur alert sem jafngildir breytunni tala1
+  }
+  else if(arguments.length == 2) {  //Annars ef arguments lengdin er 2
+    alert(tala1 * tala2); //Kemur alert sem er tala1 margfaldað með tala2
+  }
+  else if(arguments.length == 3) {  //Annars ef arguments lengdin er 3
+    alert(tala1 * tala2 * tala3); //Kemur alert sem er tala1, tala2 og tala3 margfölduð saman
+  }
+}
+argumentsMargfalda(4, 4); //Þetta fall skilar tölunni 16 í alert
 
 8.)
 Function.prototype.bind = function(breyta){
