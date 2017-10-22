@@ -22,6 +22,16 @@ nyttmap.forEach(x, key, mapObj){
 5.)
 
 6.)
+Föll nota yfirleitt breytur þegar kallað er á það, Closure er þegar fall er með innra fall sem getur notað breyturnar úr ytra fallinu.
+
+//Sýnidæmi
+"use strict"; //Þetta fer efst í skjalið
+function ytraFall(breyta) { //Ytrafallið sem inniheldur staðværabreytu, innrafallið getur kallað á þessa breytu.
+  let stadvaerbreyta = breyta; //Staðværa breytan sem fær gildið sem sett er inn í fallið.
+  return function()  { //Ytrafallið skilar innrifalli
+    return stadvaerbreyta;  //Innrafallið skilar staðværri breytu sem er inn í ytrafallinu
+  }  
+}
 
 7.)
 Arguments object er hægt að nota með falli ásamt færibreytum. Ekki þarf að fylla fallið af færibreytum.
