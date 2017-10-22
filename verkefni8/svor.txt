@@ -8,6 +8,17 @@ for(var i = 0, div; div = divs[i]; i++)	{
 }
 
 3.)
+Template literals er ný leið til þess að búa til strengi frekar auðveldlega.
+
+//Sýnidæmi
+let templateLiterals ={
+  fornafn: "Jón",
+  eftirnafn: "Jónsson",
+  aldur: "25",
+  birtaUppls() {
+    return `Nafnið mitt er ${this.fornafn} ${this.eftirnafn} og ég er ${this.aldur} ára gamall`;
+  }
+};
 
 4.)
 var nyttmap = new Map();
@@ -20,6 +31,7 @@ nyttmap.forEach(x, key, mapObj){
 }
 
 5.)
+Hægt er að nota Class til setja margar breytur inn og síðan búa til object úr Class. Class og prototype gera svipaða hluti.
 
 6.)
 Föll nota yfirleitt breytur þegar kallað er á það, Closure er þegar fall er með innra fall sem getur notað breyturnar úr ytra fallinu.
